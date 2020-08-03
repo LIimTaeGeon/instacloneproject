@@ -1,0 +1,166 @@
+.insta_icon {
+  display: inline-block;
+	background: url('../imgs/background01.png') no-repeat -53px -235px;
+	width: 22px;
+	height: 22px;
+}
+.sprite_wirte_logo {
+  display: inline-block;
+	background: url('imgs/background01.png') no-repeat -94px -72px;
+	width: 103px;
+	height: 29px;
+}
+.icon_compass_icon {
+  display: inline-block;
+	background: url('imgs/background01.png') no-repeat -130px -286px;
+	width: 23px;
+	height: 23px;
+}
+.user_icon_outline {
+  display: inline-block;
+	background: url('imgs/background01.png') no-repeat -272px -182px;
+	width: 22px;
+	height: 24px;
+}
+.heart_icon_outline {
+  display: inline-block;
+	background: url('imgs/background01.png') no-repeat -52px -261px;
+	width: 24px;
+	height: 22px;
+}
+.small_search_icon {
+  display: inline-block;
+	background: url('imgs/background01.png') no-repeat -337px -246px;
+	width: 10px;
+	height: 10px;
+}
+.more_icon {
+  display: inline-block;
+	background: url('imgs/background01.png') no-repeat -301px -218px;
+	width: 15px;
+	height: 3px;
+}
+.bubble_icon {
+  display: inline-block;
+	background: url('imgs/background01.png') no-repeat -239px -202px;
+	width: 24px;
+	height: 24px;
+}
+.small_heart_icon_outline {
+  display: inline-block;
+	background: url('imgs/background01.png') no-repeat -323px -274px;
+	width: 12px;
+	height: 11px;
+}
+.camera_icon {
+  display: inline-block;
+	background: url('imgs/background01.png') no-repeat -271px -104px;
+	width: 24px;
+	height: 22px;
+}
+.plus_icon {
+  display: inline-block;
+	background: url('imgs/background01.png') no-repeat -187px -202px;
+	width: 23px;
+	height: 23px;
+}
+.insta_big_logo {
+  display: inline-block;
+	background: url('imgs/background02.png') no-repeat -98px -150px;
+	width: 175px;
+	height: 51px;
+}
+
+
+
+
+body{
+  background: #fafafa;
+}
+
+#header{
+  width:100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  background:white;
+  border-bottom:1px solid rgba(0,0,0,0.1);
+}
+
+#header .inner{
+  width: 975px;
+  height: 77px;
+  margin: 0 auto;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#header .inner .logo > a {
+  color:transparent;
+}
+
+#header .inner .logo .insta_icon{
+  position: relative;
+  margin-right: 30px;
+}
+
+#header .inner .logo .insta_icon:after{
+  content: '';
+  width: 1px;
+  height: 28px;
+  background: #000;
+  position: absolute;
+  right: -15px;
+  top: 0;
+}
+
+#header .inner .logo div{
+  vertical-align: middle;
+}
+
+#header .search_box{
+  position: relative;
+}
+
+#search-field{
+  width: 185px;
+  height: 28px;
+  background: #fafafa;
+  border: 1px solid #dbdbdb;
+  border-radius: 3px;
+  padding: 3px 30px;
+  color: #999;
+  font-weight: 400;
+  text-align: left;
+  font-size: 14px;
+  outline: none;
+}
+#search-field::placeholder{
+  font-size: 0;
+}
+#search-field:focus::placeholder{
+  font-size: 14px;
+}
+#search-field:focus ~ .fake_field > span:nth-child(1){
+  transform: translateX(-105px);
+}
+#search-field:focus ~ .fake_field > span:nth-child(2){
+  display: none;
+}
+#header .search_box .fake_field{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+}
+#header .right_icons{
+  width: 132px;
+  display: flex;
+  justify-content: space-between;
+}
+#header .right_icons > div{
+
+}
