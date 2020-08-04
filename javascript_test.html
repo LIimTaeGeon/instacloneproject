@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>javascript_test</title>
+
+    <style>
+        .box{
+            width: 200px;
+            height: 200px;
+            background:red;
+        }
+
+        .box.on{
+            background:green;
+        }
+    </style>
+</head>
+<body>
+
+<div class="box"></div>
+
+<script>
+
+    const userName = "착한사람"; //string
+    const age = 23; //number
+    const married = false; //boolean
+    let girlFriend; //undefined
+    const money = null; // object(null)
+
+
+    console.log(typeof userName);
+    console.log(typeof age);
+    console.log(typeof married);
+    console.log(typeof girlFriend);
+    console.log(typeof money);
+
+
+    console.log(2*3);
+    console.log(2-3);
+    console.log(userName === "착한사람");
+    console.log(age > 30)
+
+
+    if(userName === "착한사람"){
+        console.log('정답');
+
+    } else {
+        console.log('오답');
+    }
+
+    if(userName === "어벙한사람"){
+        console.log("안녕 난 어벙한 사람이야");
+    } else if(userName === "멍청한사람"){
+        console.log("안녕 난 멍청한 사람이야");
+    } else if(userName === "착한사람"){
+        console.log("안녕 난 착한 사람이야");
+    } else {
+        console.log("사람이 아닙니다");
+    }
+
+
+    /*
+    for(let i = 0; i<100; i++){
+        console.log(i + "번");
+    }
+    */
+
+
+    //document.getElementsByClassName('box');
+    const box = document.querySelector('.box');
+    //querySelectorAll -> 전체 가져오기
+    console.log(box);
+
+    box.addEventListener('click',function(){
+
+        //console.log('pushed');
+        //box.style.background = 'blue';
+        //box.classList.add('on');
+        //box.classList.remove('on');
+        box.classList.toggle('on');
+
+    });
+
+
+
+</script>
+
+</body>
+</html>
