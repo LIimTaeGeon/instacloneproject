@@ -6,6 +6,7 @@
   <title> Title</title>
 
   <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/icon.css">
   <link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -92,7 +93,7 @@
   <section id="main_container">
       <div class="inner">
           <div class="contents_box">
-              <article class="contents">
+                <article class="contents">
                 <header class="top">
                   <div class="user_container">
                       <div class="profile_img">
@@ -103,7 +104,13 @@
                           <div class="country s_text">Seoul, South Korea</div>
                       </div>
                   </div>
-                  <div class="more_icon" data-name="more"></div>
+                  <div class="more_icon" data-name="more">
+                        <ul class="toggle_box">
+                            <li><input type="submit" class="follow" value="팔로우" data-name="follow"></li>
+                            <li>수정</li>
+                            <li>삭제</li>
+                        </ul>
+                  </div>
                 </header>
                   <div class="img_section">
                       <div class="trans_inner">
@@ -114,25 +121,29 @@
                   <div class="bottom_icons">
                       <div class="left_icons">
                           <div class="heart_btn">
-                              <div class="heart_icon_outline" data-name="heartbeat"></div>
+                              <div class="heart_icon_outline" name="37" data-name="heartbeat"></div>
                           </div>
                           <div class="bubble_icon"></div>
                           <div class="share_icon" data-name="share"></div>
                       </div>
                       <div class="right_icon">
-                          <div class="bookmark_icon" data-name="bookmark"></div>
+                          <div class="bookmark_icon" name="37" data-name="bookmark"></div>
                       </div>
                   </div>
                   <div class="likes m_text">
-                    좋아요
-                    <span class="count">2,345</span>
-                    개
+
+                    <span id="like-count-37">2,345</span>
+                    <span id="bookmark-count-37"></span>
+
                   </div>
 
                   <div class="comment_container">
-                      <div class="comment">
-                          <div class="nick-name m_text">dongdong2</div>
-                          <div>강아지가 너무 귀여워요</div>
+                      <div class="comment" id="comment-list-ajax-post-37">
+
+                          <div class="comment-detail">
+                                <div class="nick-name m_text">dongdong2</div>
+                                <div>강아지가 너무 귀여워요</div>
+                          </div>
                       </div>
                       <div class="small_heart">
                           <div class="small_heart_icon_outline"></div>
@@ -140,13 +151,12 @@
                   </div>
                 <div class="timer">1시간 전</div>
 
-                <div class="comment_field">
+                <div class="comment_field" id="add-comment-post-37">
                     <input type="text" placeholder="댓글달기...">
-                    <div class="upload_btn">게시</div>
+                    <div class="upload_btn m_text" data-name="comment">게시</div>
                 </div>
               </article>
-              <article class="contents">
-
+                <article class="contents">
                 <header class="top">
                   <div class="user_container">
                       <div class="profile_img">
@@ -157,7 +167,13 @@
                           <div class="country s_text">Seoul, South Korea</div>
                       </div>
                   </div>
-                  <div class="more_icon" data-name="more"></div>
+                  <div class="more_icon" data-name="more">
+                        <ul class="toggle_box">
+                            <li><input type="submit" class="follow" value="팔로우" data-name="follow"></li>
+                            <li>수정</li>
+                            <li>삭제</li>
+                        </ul>
+                  </div>
                 </header>
                   <div class="img_section">
                       <div class="trans_inner">
@@ -168,25 +184,29 @@
                   <div class="bottom_icons">
                       <div class="left_icons">
                           <div class="heart_btn">
-                              <div class="heart_icon_outline" data-name="heartbeat"></div>
+                              <div class="heart_icon_outline" name="37" data-name="heartbeat"></div>
                           </div>
                           <div class="bubble_icon"></div>
                           <div class="share_icon" data-name="share"></div>
                       </div>
                       <div class="right_icon">
-                          <div class="bookmark_icon" data-name="bookmark"></div>
+                          <div class="bookmark_icon" name="37" data-name="bookmark"></div>
                       </div>
                   </div>
                   <div class="likes m_text">
-                    좋아요
-                    <span class="count">2,345</span>
-                    개
+
+                    <span id="like-count-37">2,345</span>
+                    <span id="bookmark-count-37"></span>
+
                   </div>
 
                   <div class="comment_container">
-                      <div class="comment">
-                          <div class="nick-name m_text">dongdong2</div>
-                          <div>강아지가 너무 귀여워요</div>
+                      <div class="comment" id="comment-list-ajax-post-37">
+
+                          <div class="comment-detail">
+                                <div class="nick-name m_text">dongdong2</div>
+                                <div>강아지가 너무 귀여워요</div>
+                          </div>
                       </div>
                       <div class="small_heart">
                           <div class="small_heart_icon_outline"></div>
@@ -194,13 +214,12 @@
                   </div>
                 <div class="timer">1시간 전</div>
 
-                <div class="comment_field">
+                <div class="comment_field" id="add-comment-post-37">
                     <input type="text" placeholder="댓글달기...">
-                    <div class="upload_btn">게시</div>
+                    <div class="upload_btn m_text" data-name="comment">게시</div>
                 </div>
               </article>
-              <article class="contents">
-
+                <article class="contents">
                 <header class="top">
                   <div class="user_container">
                       <div class="profile_img">
@@ -211,7 +230,13 @@
                           <div class="country s_text">Seoul, South Korea</div>
                       </div>
                   </div>
-                  <div class="more_icon" data-name="more"></div>
+                  <div class="more_icon" data-name="more">
+                        <ul class="toggle_box">
+                            <li><input type="submit" class="follow" value="팔로우" data-name="follow"></li>
+                            <li>수정</li>
+                            <li>삭제</li>
+                        </ul>
+                  </div>
                 </header>
                   <div class="img_section">
                       <div class="trans_inner">
@@ -222,25 +247,29 @@
                   <div class="bottom_icons">
                       <div class="left_icons">
                           <div class="heart_btn">
-                              <div class="heart_icon_outline" data-name="heartbeat"></div>
+                              <div class="heart_icon_outline" name="37" data-name="heartbeat"></div>
                           </div>
                           <div class="bubble_icon"></div>
                           <div class="share_icon" data-name="share"></div>
                       </div>
                       <div class="right_icon">
-                          <div class="bookmark_icon" data-name="bookmark"></div>
+                          <div class="bookmark_icon" name="37" data-name="bookmark"></div>
                       </div>
                   </div>
                   <div class="likes m_text">
-                    좋아요
-                    <span class="count">2,345</span>
-                    개
+
+                    <span id="like-count-37">2,345</span>
+                    <span id="bookmark-count-37"></span>
+
                   </div>
 
                   <div class="comment_container">
-                      <div class="comment">
-                          <div class="nick-name m_text">dongdong2</div>
-                          <div>강아지가 너무 귀여워요</div>
+                      <div class="comment" id="comment-list-ajax-post-37">
+
+                          <div class="comment-detail">
+                                <div class="nick-name m_text">dongdong2</div>
+                                <div>강아지가 너무 귀여워요</div>
+                          </div>
                       </div>
                       <div class="small_heart">
                           <div class="small_heart_icon_outline"></div>
@@ -248,338 +277,13 @@
                   </div>
                 <div class="timer">1시간 전</div>
 
-                <div class="comment_field">
+                <div class="comment_field" id="add-comment-post-37">
                     <input type="text" placeholder="댓글달기...">
-                    <div class="upload_btn">게시</div>
+                    <div class="upload_btn m_text" data-name="comment">게시</div>
                 </div>
               </article>
-              <article class="contents">
-
-                <header class="top">
-                  <div class="user_container">
-                      <div class="profile_img">
-                          <img src="imgs/thumb.jpeg" alt="프로필이미지">
-                      </div>
-                      <div class="user-name">
-                          <div class="nick-name m_text">Whakmapakssi</div>
-                          <div class="country s_text">Seoul, South Korea</div>
-                      </div>
-                  </div>
-                  <div class="more_icon" data-name="more"></div>
-                </header>
-                  <div class="img_section">
-                      <div class="trans_inner">
-                          <div><img src="imgs/img_section/img01.jpg" alt="visual01"></div>
-                      </div>
-                  </div>
-
-                  <div class="bottom_icons">
-                      <div class="left_icons">
-                          <div class="heart_btn">
-                              <div class="heart_icon_outline" data-name="heartbeat"></div>
-                          </div>
-                          <div class="bubble_icon"></div>
-                          <div class="share_icon" data-name="share"></div>
-                      </div>
-                      <div class="right_icon">
-                          <div class="bookmark_icon" data-name="bookmark"></div>
-                      </div>
-                  </div>
-                  <div class="likes m_text">
-                    좋아요
-                    <span class="count">2,345</span>
-                    개
-                  </div>
-
-                  <div class="comment_container">
-                      <div class="comment">
-                          <div class="nick-name m_text">dongdong2</div>
-                          <div>강아지가 너무 귀여워요</div>
-                      </div>
-                      <div class="small_heart">
-                          <div class="small_heart_icon_outline"></div>
-                      </div>
-                  </div>
-                <div class="timer">1시간 전</div>
-
-                <div class="comment_field">
-                    <input type="text" placeholder="댓글달기...">
-                    <div class="upload_btn">게시</div>
-                </div>
-              </article>
-              <article class="contents">
-
-                <header class="top">
-                  <div class="user_container">
-                      <div class="profile_img">
-                          <img src="imgs/thumb.jpeg" alt="프로필이미지">
-                      </div>
-                      <div class="user-name">
-                          <div class="nick-name m_text">Whakmapakssi</div>
-                          <div class="country s_text">Seoul, South Korea</div>
-                      </div>
-                  </div>
-                  <div class="more_icon" data-name="more"></div>
-                </header>
-                  <div class="img_section">
-                      <div class="trans_inner">
-                          <div><img src="imgs/img_section/img01.jpg" alt="visual01"></div>
-                      </div>
-                  </div>
-
-                  <div class="bottom_icons">
-                      <div class="left_icons">
-                          <div class="heart_btn">
-                              <div class="heart_icon_outline" data-name="heartbeat"></div>
-                          </div>
-                          <div class="bubble_icon"></div>
-                          <div class="share_icon" data-name="share"></div>
-                      </div>
-                      <div class="right_icon">
-                          <div class="bookmark_icon" data-name="bookmark"></div>
-                      </div>
-                  </div>
-                  <div class="likes m_text">
-                    좋아요
-                    <span class="count">2,345</span>
-                    개
-                  </div>
-
-                  <div class="comment_container">
-                      <div class="comment">
-                          <div class="nick-name m_text">dongdong2</div>
-                          <div>강아지가 너무 귀여워요</div>
-                      </div>
-                      <div class="small_heart">
-                          <div class="small_heart_icon_outline"></div>
-                      </div>
-                  </div>
-                <div class="timer">1시간 전</div>
-
-                <div class="comment_field">
-                    <input type="text" placeholder="댓글달기...">
-                    <div class="upload_btn">게시</div>
-                </div>
-              </article>
-              <article class="contents">
-
-                <header class="top">
-                  <div class="user_container">
-                      <div class="profile_img">
-                          <img src="imgs/thumb.jpeg" alt="프로필이미지">
-                      </div>
-                      <div class="user-name">
-                          <div class="nick-name m_text">Whakmapakssi</div>
-                          <div class="country s_text">Seoul, South Korea</div>
-                      </div>
-                  </div>
-                  <div class="more_icon" data-name="more"></div>
-                </header>
-                  <div class="img_section">
-                      <div class="trans_inner">
-                          <div><img src="imgs/img_section/img01.jpg" alt="visual01"></div>
-                      </div>
-                  </div>
-
-                  <div class="bottom_icons">
-                      <div class="left_icons">
-                          <div class="heart_btn">
-                              <div class="heart_icon_outline" data-name="heartbeat"></div>
-                          </div>
-                          <div class="bubble_icon"></div>
-                          <div class="share_icon" data-name="share"></div>
-                      </div>
-                      <div class="right_icon">
-                          <div class="bookmark_icon" data-name="bookmark"></div>
-                      </div>
-                  </div>
-                  <div class="likes m_text">
-                    좋아요
-                    <span class="count">2,345</span>
-                    개
-                  </div>
-
-                  <div class="comment_container">
-                      <div class="comment">
-                          <div class="nick-name m_text">dongdong2</div>
-                          <div>강아지가 너무 귀여워요</div>
-                      </div>
-                      <div class="small_heart">
-                          <div class="small_heart_icon_outline"></div>
-                      </div>
-                  </div>
-                <div class="timer">1시간 전</div>
-
-                <div class="comment_field">
-                    <input type="text" placeholder="댓글달기...">
-                    <div class="upload_btn">게시</div>
-                </div>
-              </article>
-              <article class="contents">
-
-                <header class="top">
-                  <div class="user_container">
-                      <div class="profile_img">
-                          <img src="imgs/thumb.jpeg" alt="프로필이미지">
-                      </div>
-                      <div class="user-name">
-                          <div class="nick-name m_text">Whakmapakssi</div>
-                          <div class="country s_text">Seoul, South Korea</div>
-                      </div>
-                  </div>
-                  <div class="more_icon" data-name="more"></div>
-                </header>
-                  <div class="img_section">
-                      <div class="trans_inner">
-                          <div><img src="imgs/img_section/img01.jpg" alt="visual01"></div>
-                      </div>
-                  </div>
-
-                  <div class="bottom_icons">
-                      <div class="left_icons">
-                          <div class="heart_btn">
-                              <div class="heart_icon_outline" data-name="heartbeat"></div>
-                          </div>
-                          <div class="bubble_icon"></div>
-                          <div class="share_icon" data-name="share"></div>
-                      </div>
-                      <div class="right_icon">
-                          <div class="bookmark_icon" data-name="bookmark"></div>
-                      </div>
-                  </div>
-                  <div class="likes m_text">
-                    좋아요
-                    <span class="count">2,345</span>
-                    개
-                  </div>
-
-                  <div class="comment_container">
-                      <div class="comment">
-                          <div class="nick-name m_text">dongdong2</div>
-                          <div>강아지가 너무 귀여워요</div>
-                      </div>
-                      <div class="small_heart">
-                          <div class="small_heart_icon_outline"></div>
-                      </div>
-                  </div>
-                <div class="timer">1시간 전</div>
-
-                <div class="comment_field">
-                    <input type="text" placeholder="댓글달기...">
-                    <div class="upload_btn">게시</div>
-                </div>
-              </article>
-              <article class="contents">
-
-                <header class="top">
-                  <div class="user_container">
-                      <div class="profile_img">
-                          <img src="imgs/thumb.jpeg" alt="프로필이미지">
-                      </div>
-                      <div class="user-name">
-                          <div class="nick-name m_text">Whakmapakssi</div>
-                          <div class="country s_text">Seoul, South Korea</div>
-                      </div>
-                  </div>
-                  <div class="more_icon" data-name="more"></div>
-                </header>
-                  <div class="img_section">
-                      <div class="trans_inner">
-                          <div><img src="imgs/img_section/img01.jpg" alt="visual01"></div>
-                      </div>
-                  </div>
-
-                  <div class="bottom_icons">
-                      <div class="left_icons">
-                          <div class="heart_btn">
-                              <div class="heart_icon_outline" data-name="heartbeat"></div>
-                          </div>
-                          <div class="bubble_icon"></div>
-                          <div class="share_icon" data-name="share"></div>
-                      </div>
-                      <div class="right_icon">
-                          <div class="bookmark_icon" data-name="bookmark"></div>
-                      </div>
-                  </div>
-                  <div class="likes m_text">
-                    좋아요
-                    <span class="count">2,345</span>
-                    개
-                  </div>
-
-                  <div class="comment_container">
-                      <div class="comment">
-                          <div class="nick-name m_text">dongdong2</div>
-                          <div>강아지가 너무 귀여워요</div>
-                      </div>
-                      <div class="small_heart">
-                          <div class="small_heart_icon_outline"></div>
-                      </div>
-                  </div>
-                <div class="timer">1시간 전</div>
-
-                <div class="comment_field">
-                    <input type="text" placeholder="댓글달기...">
-                    <div class="upload_btn">게시</div>
-                </div>
-              </article>
-              <article class="contents">
-
-                <header class="top">
-                  <div class="user_container">
-                      <div class="profile_img">
-                          <img src="imgs/thumb.jpeg" alt="프로필이미지">
-                      </div>
-                      <div class="user-name">
-                          <div class="nick-name m_text">Whakmapakssi</div>
-                          <div class="country s_text">Seoul, South Korea</div>
-                      </div>
-                  </div>
-                  <div class="more_icon" data-name="more"></div>
-                </header>
-                  <div class="img_section">
-                      <div class="trans_inner">
-                          <div><img src="imgs/img_section/img01.jpg" alt="visual01"></div>
-                      </div>
-                  </div>
-
-                  <div class="bottom_icons">
-                      <div class="left_icons">
-                          <div class="heart_btn">
-                              <div class="heart_icon_outline" data-name="heartbeat"></div>
-                          </div>
-                          <div class="bubble_icon"></div>
-                          <div class="share_icon" data-name="share"></div>
-                      </div>
-                      <div class="right_icon">
-                          <div class="bookmark_icon" data-name="bookmark"></div>
-                      </div>
-                  </div>
-                  <div class="likes m_text">
-                    좋아요
-                    <span class="count">2,345</span>
-                    개
-                  </div>
-
-                  <div class="comment_container">
-                      <div class="comment">
-                          <div class="nick-name m_text">dongdong2</div>
-                          <div>강아지가 너무 귀여워요</div>
-                      </div>
-                      <div class="small_heart">
-                          <div class="small_heart_icon_outline"></div>
-                      </div>
-                  </div>
-                <div class="timer">1시간 전</div>
-
-                <div class="comment_field">
-                    <input type="text" placeholder="댓글달기...">
-                    <div class="upload_btn">게시</div>
-                </div>
-              </article>
-
-
           </div>
+          <input type="hidden" id="page" value="0">
           <div class="side_box">
               <div class="user_profile">
                   <div class="profile_thumb">
@@ -687,7 +391,8 @@
 
 
 
-
+<script
+  src="https://code.jquery.com/jquery-1.12.4.js"></script>
 <script src="js/main.js"></script>
 </body>
 

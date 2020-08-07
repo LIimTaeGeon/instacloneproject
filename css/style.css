@@ -1,100 +1,3 @@
-.insta_icon {
-  display: inline-block;
-	background: url('../imgs/background01.png') no-repeat -53px -235px;
-	width: 22px;
-	height: 22px;
-}
-.sprite_write_logo {
-  display: inline-block;
-	background: url('../imgs/background01.png') no-repeat -94px -72px;
-	width: 103px;
-	height: 29px;
-}
-.icon_compass_icon {
-  display: inline-block;
-	background: url('../imgs/background01.png') no-repeat -130px -286px;
-	width: 23px;
-	height: 23px;
-}
-.user_icon_outline {
-  display: inline-block;
-	background: url('../imgs/background01.png') no-repeat -272px -182px;
-	width: 22px;
-	height: 24px;
-}
-.heart_icon_outline {
-  display: inline-block;
-	background: url('../imgs/background01.png') no-repeat -52px -261px;
-	width: 24px;
-	height: 22px;
-}
-.heart_icon_full {
-    display: inline-block;
-	background: url('../imgs/background01.png') no-repeat -26px -261px;
-	width: 24px;
-	height: 22px;
-}
-.small_search_icon {
-  display: inline-block;
-	background: url('../imgs/background01.png') no-repeat -337px -246px;
-	width: 10px;
-	height: 10px;
-}
-.more_icon {
-  display: inline-block;
-	background: url('../imgs/background01.png') no-repeat -301px -218px;
-	width: 15px;
-	height: 3px;
-}
-.bubble_icon {
-  display: inline-block;
-	background: url('../imgs/background01.png') no-repeat -239px -202px;
-	width: 24px;
-	height: 24px;
-}
-.small_heart_icon_outline {
-  display: inline-block;
-	background: url('../imgs/background01.png') no-repeat -323px -274px;
-	width: 12px;
-	height: 11px;
-}
-.camera_icon {
-  display: inline-block;
-	background: url('../imgs/background01.png') no-repeat -271px -104px;
-	width: 24px;
-	height: 22px;
-}
-.plus_icon {
-  display: inline-block;
-	background: url('../imgs/background01.png') no-repeat -187px -202px;
-	width: 23px;
-	height: 23px;
-}
-.insta_big_logo {
-  display: inline-block;
-	background: url('../imgs/background02.png') no-repeat -98px -150px;
-	width: 175px;
-	height: 51px;
-}
-.share_icon {
-    display: inline-block;
-	background: url('../imgs/background01.png') no-repeat -324px -52px;
-	width: 21px;
-	height: 24px;
-}
-.bookmark_icon {
-    display: inline-block;
-	background: url('../imgs/background01.png') no-repeat -237px -286px;
-	width: 19px;
-	height: 24px;
-}
-.bookmark_icon.on {
-    display: inline-block;
-	background: url('../imgs/background01.png') no-repeat -159px -286px;
-	width: 19px;
-	height: 24px;
-}
-
 
 .m_text{
     font-size: 14px;
@@ -256,6 +159,29 @@ body{
 .contents .top .user_container{
     display: flex;
 }
+.contents .more_icon{
+    position: relative;
+}
+.contents .more_icon.on .toggle_box{
+    display: block;
+}
+.contents .toggle_box{
+    text-align : center;
+    position: absolute;
+    right :0;
+    top: 20px;
+    border: 1px solid rgba(0,0,0,0.09);
+    border-radius: 3px;
+    display: none;
+}
+.contents .toggle_box > li{
+    padding: 5px 10px;
+    background: #fff;
+}
+.contents .toggle_box > li input{
+    border: none;
+    font-side_box: inherit;
+}
 .contents .img_section{
     overflow: hidden;
 }
@@ -295,7 +221,12 @@ body{
 }
 .contents .comment_container .comment{
     display: flex;
+    flex-direction: column;
     font-size: 14px;
+}
+
+.contents .comment_container .comment-detail{
+    display:flex;
 }
 .contents .comment_container .comment .nick-name{
     margin-right: 10px;
@@ -330,7 +261,7 @@ body{
     top: 50%;
     transform: translateY(-50%);
     cursor: pointer;
-    pointer-events: none;
+    /*pointer-events: none;*/
     opacity: 0.6;
 }
 .side_box{
